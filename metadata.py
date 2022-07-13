@@ -68,7 +68,7 @@ def GetSongInfo(name):
 def GetImage(link):
     print("getting the coverArt")
     imgURL = link
-    image = urllib.request.urlretrieve(imgURL, "C:/Users/HP/Desktop/TempFolder")
+    image = urllib.request.urlretrieve(imgURL, "storage/emulated/0/Test/Temp")
     return image
 
 
@@ -91,7 +91,7 @@ def ChangeTheInfo(file, infolist):
 
 def start():
     print("starting...")
-    filesList = glob.glob(r"")
+    filesList = glob.glob("storage/emulated/0/snaptube/download/SnapTubeAudio")
     print(filesList)
     for file in filesList:
         fileName = ntpath.basename(file)
